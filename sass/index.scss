@@ -1,0 +1,80 @@
+@charset "UTF-8";
+//-----------------------------------------------------
+// index scss
+// 默认会输出reset样式一份
+//-----------------------------------------------------
+
+//-----------------------------------------------------
+// author:      Yic
+// version:     1.0
+// time:        2016-06-16
+//-----------------------------------------------------
+@import
+"./assets/Font-Awesome-master/scss/font-awesome",
+"./assets/sassCore-master/base";
+html{
+  height: 100%;
+  body{
+    height: 100%;
+    background: #fff;
+    .fl{
+      @include float(left);
+    }
+    .fr{
+      @include float(right);
+    }
+    //  公用头部样式
+    .header{
+      height:170px;
+      .header-main{
+        @include center-block;
+        width: 1395px;
+        div{
+          display: inline-block;
+          a{
+            color: #000;
+          }
+        }
+        .header-logo{
+          margin-right: 160px;
+        }
+        .header-href{
+          padding-top: 80px;
+          a{
+            margin-right: 40px;
+          }
+        }
+      }
+    }
+    //  公用尾部样式
+    .footer{
+      height:640px;
+      .footer-follow{
+        position: relative;
+        margin-top: 115px;
+        text-align: center;
+        .bt2{
+          border-bottom: 2px dashed #a0a0a0;
+        }
+        span{
+          display: inline-block;
+          width: 375px;
+          font-size: 30px;
+          background: #fff;
+          position: relative;
+          top: -25px;
+        }
+      }
+      .footer-nav{
+        height:300px;
+        background-color: #f4f4f4;
+      }
+      .footer-copy{
+        height: 50px;
+        background: #ffb07b;
+        border-bottom: 15px solid red;
+      }
+    }
+  }
+}
+
