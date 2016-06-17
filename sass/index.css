@@ -2697,13 +2697,16 @@ html {
           margin-left: 130px; }
           html body .header .header-main .header-search input {
             width: 130px;
-            padding: 10px;
+            height: 12px;
+            padding: 4px 10px;
+            font-size: 12px;
             border: 1px solid #666;
             outline: 0;
             border-radius: 15px; }
           html body .header .header-main .header-search i {
             font-size: 18px;
-            margin-left: 10px; }
+            margin-left: 10px;
+            cursor: pointer; }
     html body .footer {
       height: 640px; }
       html body .footer .footer-follow {
