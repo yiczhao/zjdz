@@ -6,6 +6,9 @@
   .content .login-bg .login-tabs:after {
     clear: both; }
 
+html {
+  overflow: hidden; }
+
 .content {
   width: 100%;
   height: 100%;
@@ -88,7 +91,8 @@
         .content .login-bg .login-rows a.fl:hover {
           opacity: 0.8; }
       .content .login-bg .login-rows span.fr {
-        color: #fff; }
+        color: #fff;
+        cursor: pointer; }
     .content .login-bg .pt70 {
       padding-top: 70px; }
       .content .login-bg .pt70 p {

@@ -7,5 +7,7 @@ $('.login-btn').on('click',function(){
     console.log(_name.val())
     console.log(_password.val())
 });
-
+$('.clear .fr').on('click',function(){
+    $('.fa-square').toggleClass('fa-check-square')
+});
 

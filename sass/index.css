@@ -2189,6 +2189,14 @@ html body .header .header-main {
   margin-left: auto;
   margin-right: auto; }
 
+html body .clear {
+  *zoom: 1; }
+  html body .clear:before, html body .clear:after {
+    content: "";
+    display: table; }
+  html body .clear:after {
+    clear: both; }
+
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
@@ -2661,6 +2669,8 @@ html {
     html body .fr {
       float: right;
       display: inline; }
+    html body .clear {
+      position: relative; }
     html body .header {
       height: 170px; }
       html body .header .header-main {
@@ -2668,13 +2678,32 @@ html {
         html body .header .header-main div {
           display: inline-block; }
           html body .header .header-main div a {
-            color: #000; }
+            color: #000;
+            font-size: 20px; }
+            html body .header .header-main div a i {
+              position: relative;
+              top: -3px;
+              left: -5px;
+              font-size: 10px; }
         html body .header .header-main .header-logo {
           margin-right: 160px; }
         html body .header .header-main .header-href {
           padding-top: 80px; }
           html body .header .header-main .header-href a {
             margin-right: 40px; }
+        html body .header .header-main .header-search {
+          position: relative;
+          top: -3px;
+          margin-left: 130px; }
+          html body .header .header-main .header-search input {
+            width: 130px;
+            padding: 10px;
+            border: 1px solid #666;
+            outline: 0;
+            border-radius: 15px; }
+          html body .header .header-main .header-search i {
+            font-size: 18px;
+            margin-left: 10px; }
     html body .footer {
       height: 640px; }
       html body .footer .footer-follow {
