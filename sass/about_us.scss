@@ -1,0 +1,290 @@
+@charset "UTF-8";
+//-----------------------------------------------------
+// index scss
+//-----------------------------------------------------
+
+//-----------------------------------------------------
+// author:      Yic
+// version:     1.0
+// time:        2016-06-16
+//-----------------------------------------------------
+@import "./assets/sassCore-master/function";
+.content{
+  .banner{
+    height:370px;
+    margin-bottom: 65px;
+    background: url("../images/aboutUs/banner.jpg") no-repeat 100% 100%;
+  }
+  .company_profile{
+    .floor-cell{
+      vertical-align: middle;
+      .about-title{
+        padding-left: 25px;
+        margin-top: -60px;
+        border-left:5px solid #000;
+        font-size: 50px;
+        line-height: 100%;
+      }
+      p:first-child{
+        margin-bottom: 45px;
+      }
+      p{
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+  }
+  .about-common{
+    margin-top: 30px;
+    .about-btns{
+      padding-bottom: 25px;
+      border-bottom: 1px solid #f3f3f3;
+      text-align: center;
+      a{
+        margin-right: 25px;
+        display: inline-block;
+        width: 265px;
+        height:35px;
+        line-height: 35px;
+        font-size: 24px;
+        text-align: center;
+        background: #f3f3f3;
+        color: #000;
+      }
+      .active{
+        background: #000;
+        color: #fff;
+      }
+    }
+    .about-home{
+      height: 65px;
+      line-height: 65px;
+      text-align: right;
+      a{
+        color: #000;
+        font-size: 20px;
+        i{
+          font-size: 25px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .brand{
+    display: block;
+    padding: 20px 0 50px;
+    @include clearfix();
+    border-top:1px solid #eeeeee;
+    .floor-cell:first-child{
+      margin-right: 90px;
+    }
+    .floor-cell{
+      display: block;
+      @include float(left);
+      width:650px;
+      padding-bottom: 60px;
+      text-align: center;
+      background-color: #eeeeee;
+      .brand-img{
+        width: 575px;
+        margin: 40px auto 0;
+        overflow: hidden;
+      }
+      .brand-title{
+        font-size: 42px;
+        padding: 50px 0 30px;
+      }
+      .brand-text{
+        font-size: 18px;
+      }
+    }
+  }
+  .press_center{
+    @include clearfix();
+    padding-top: 85px;
+    border-top:1px solid #eeeeee;
+    .center-block{
+      width: 1495px;
+    }
+    .floor-cell{
+      position: relative;
+      margin-left: 30px;
+      margin-bottom: 95px;
+      display: block;
+      @include float(left);
+      width:475px;
+      padding-bottom: 25px;
+      border:1px solid #eeeeee;
+      .press-img{
+        width: 435px;
+        margin: 25px auto 65px;
+        overflow: hidden;
+        box-shadow: #ccc 5px 5px 5px;
+      }
+      .press-title{
+        margin-left:25px;
+        padding-left: 10px;
+        font-size: 21px;
+        border-left:2px solid #000;
+        line-height: 100%;
+      }
+      .press-time{
+        margin: 25px;
+        color: #b7b7b7;
+        text-align: right;
+        font-size: 22px;
+      }
+      .press-text{
+        font-size: 12px;
+        margin:0 25px;
+      }
+      .read{
+        position: absolute;
+        bottom:20px;
+        right: 21px;
+        display: inline-block;
+        width: 115px;
+        height: 18px;
+        line-height: 18px;
+        text-align: center;
+        background: #c6292b;
+        color: #fff;
+        &:hover{
+          opacity: 1;
+        }
+      }
+    }
+    .mr0{
+      margin-left: 0px;
+    }
+    .pages{
+      float: left;
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+      i{
+        color:#dbdbdb;
+        cursor: pointer;
+        &:hover{
+          @include opacity(80)
+        }
+      }
+    }
+  }
+  .contact_us{
+    padding-top: 70px;
+    border-top:1px solid #eeeeee;
+    .floor{
+      width: 1595px;
+    }
+    .floor-cell:first-child{
+      margin-right: 80px;
+    }
+    .floor-cell{
+      display: block;
+      @include float(left);
+      padding-bottom: 60px;
+      text-align: center;
+      .brand-img{
+        width: 726px;
+        overflow: hidden;
+      }
+      p{
+        font-size: 24px;
+        width: 690px;
+        text-align: left;
+        display: table;
+        margin-bottom: 40px;
+        line-height: 100%;
+        i,span{
+          display: table-cell;
+          vertical-align: middle;
+        }
+        i{
+          font-size: 30px;
+          padding-right: 35px;
+        }
+      }
+      .contact-follow{
+        position: relative;
+        margin-top: 115px;
+        text-align: center;
+        .bt2{
+          border-bottom: 2px dashed #a0a0a0;
+        }
+        span{
+          display: inline-block;
+          width: 235px;
+          font-size: 27px;
+          background: #fff;
+          position: relative;
+          top: -20px;
+        }
+      }
+      .submit{
+        position: relative;
+        textarea{
+          width: 755px;
+          padding: 15px;
+          height: 67px;
+          border: 1px solid #c0c0c0;
+          outline: 0;
+          border-radius: 5px;
+        }
+        a{
+          position: absolute;
+          top:5px;
+          right: 10px;
+          display: inline-block;
+          vertical-align: middle;
+          background: #000;
+          color: #fff;
+          width: 88px;
+          height:88px;
+          line-height: 88px;
+        }
+      }
+    }
+  }
+  .company_info{
+    padding-top: 70px;
+    border-top:1px solid #eeeeee;
+    .center-block{
+      text-align: center;
+      h1{
+        font-size:53px;
+        width: 1180px;
+        line-height: 100%;
+        margin: 0 auto;
+      }
+      .time{
+        margin:45px 0 155px;
+        color:#747474;
+        font-size: 36px;
+      }
+      .floor{
+        margin-bottom: 60px;
+        .floor-cell{
+          padding: 10px;
+        }
+      }
+      p{
+        font-size: 28px;
+        margin-bottom: 60px;
+        color:#666;
+        line-height: 100%;
+      }
+      .page{
+        font-size: 35px;
+        margin-bottom: 130px;
+        a{
+          color: #000;
+          margin-right: 110px;
+          i{
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+  }
+}

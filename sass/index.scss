@@ -12,11 +12,26 @@
 @import
 "./assets/Font-Awesome-master/scss/font-awesome",
 "./assets/sassCore-master/base";
+$border:1px solid #a0a0a0;
 html{
   height: 100%;
   body{
     height: 100%;
     background: #fff;
+    a{
+      &:hover{
+        @include opacity(80);
+      }
+    }
+    .tl{
+      text-align: left;
+    }
+    .tr{
+      text-align: right;
+    }
+    .tc{
+      text-align: center;
+    }
     .fl{
       @include float(left);
     }
@@ -27,11 +42,26 @@ html{
       @include clearfix();
       position: relative;
     }
+    .center-block{
+      width: 1395px;
+      @include center-block();
+    }
+    .floor{
+      display: table;
+      border-collapse: collapse;
+      .floor-row{
+        display: table-row;
+      }
+      .floor-cell{
+        display: table-cell;
+      }
+    }
     //  公用头部样式
     .header{
       height:170px;
       .header-main{
         @include center-block;
+        @include clearfix();
         width: 1395px;
         div{
           display: inline-block;
@@ -48,6 +78,7 @@ html{
         }
         .header-logo{
           margin-right: 160px;
+          width: 290px;
         }
         .header-href{
           padding-top: 80px;
@@ -78,7 +109,6 @@ html{
     }
     //  公用尾部样式
     .footer{
-      height:640px;
       .footer-follow{
         position: relative;
         margin-top: 115px;
@@ -96,13 +126,99 @@ html{
         }
       }
       .footer-nav{
+        width: 100%;
+        padding: 80px 110px 0;
         height:300px;
         background-color: #f4f4f4;
+        .floor-nav-sub{
+          padding:60px 180px 0 110px;
+          p:first-child{
+            font-size: 25px;
+          }
+          p{
+            position: relative;
+            width: 445px;
+            font-size: 20px;
+            line-height: 100%;
+            margin-bottom: 20px;
+            input{
+              width: 360px;
+              padding: 2px 40px;
+              height: 34px;
+              outline: 0;;
+              border:$border;
+              border-radius: 25px;
+            }
+            i{
+              position: absolute;
+              top: 9px;
+              right: 20px;
+              cursor: pointer;
+            }
+          }
+          p.mt35{
+            margin:35px 0 20px;
+          }
+        }
+        .footer-nav-about{
+          width: 360px;
+          padding-top: 60px;
+          p:first-child{
+            margin-bottom: 50px;
+            a{
+              font-size: 25px;
+            }
+          }
+          p{
+            margin-bottom: 15px;
+            line-height: 100%;
+            a{
+              font-size: 20px;
+              color:#333;
+            }
+          }
+        }
+        .footer-nav-about:last-child{
+          p:first-child{
+            margin-bottom: 20px;
+            a{
+              font-size: 25px;
+            }
+          }
+          p{
+            padding-top: 15px;
+            margin-bottom: 20px;
+            line-height: 100%;
+            a{
+              font-size: 25px;
+              color:#333;
+              i{
+                margin-right: 20px;
+                font-size: 30px;
+              }
+            }
+          }
+          p:last-child{
+            a i{
+              position: relative;
+              top: 3px;
+            }
+          }
+        }
       }
       .footer-copy{
         height: 50px;
         background: #ffb07b;
         border-bottom: 15px solid red;
+        padding-left: 110px;
+        padding-right: 80px;
+        span{
+          width: 33%;
+          display: inline-block;
+          font-size: 22px;
+          line-height: 50px;
+          color: #fff;
+        }
       }
     }
   }

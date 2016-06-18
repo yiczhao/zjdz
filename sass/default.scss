@@ -10,6 +10,100 @@
 //-----------------------------------------------------
 @import "./assets/sassCore-master/function";
 .content{
-  height:1050px;
-  background: url("../images/index/banner.jpg") no-repeat 100% 100%;
+  .banner{
+    height:1050px;
+    background: url("../images/index/banner.jpg") no-repeat 100% 100%;
+    a{
+      margin-top:900px;
+      margin-left: 185px;
+      display: inline-block;
+      width:345px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 25px;
+      color:#fff;
+      text-align: center;
+      border: 1px solid #fff;
+      i{
+        transform: rotate(44deg);
+        font-size: 25px;
+        margin-left: 15px;
+      }
+    }
+  }
+  .floor-first{
+    position: relative;
+    margin-top: 90px;
+    margin-bottom: 140px;
+    height:808px;
+    .floor-cell{
+      position: absolute;
+    }
+    .ab-one{
+      top:0;
+      left: 0;
+    }
+    .ab-two{
+      top:416px;
+      left: 0;
+    }
+    .ab-three{
+      top:0;
+      left: 410px;
+    }
+  }
+  .floor-second{
+    .floor-second-title,.floor-second-footer{
+      text-align: center;
+      font-size: 50px;
+      line-height: 100%;
+    }
+    .floor-second-footer{
+      span{
+        display: inline-block;
+        padding: 0 60px;
+        height: 40px;
+        line-height: 40px;
+        background: #000;
+        color: #fff;
+        font-size: 25px;
+        cursor: pointer;
+        &:hover{
+          @include opacity(80);
+        }
+      }
+    }
+    .floor-second-content{
+      .floor{
+        width: 100%;
+      }
+      .floor-cell:first-child{
+        width: 34%;
+      }
+      .floor-cell p{
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 22px;
+        line-height: 100%;
+        a{
+          display: inline-block;
+          width: 150px;
+          height: 27px;
+          line-height: 27px;
+          background: #f4f4f4;
+          color: #000;
+          font-size: 15px;
+          cursor: pointer;
+        }
+      }
+    }
+    .floor-cell{
+      width: 33%;
+      .cell-img{
+        vertical-align: middle;
+        height: 365px;
+        text-align: center;
+      }
+    }
+  }
 }

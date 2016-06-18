@@ -1,5 +1,75 @@
-.content {
+.content .banner {
   height: 1050px;
   background: url("../images/index/banner.jpg") no-repeat 100% 100%; }
+  .content .banner a {
+    margin-top: 900px;
+    margin-left: 185px;
+    display: inline-block;
+    width: 345px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff; }
+    .content .banner a i {
+      transform: rotate(44deg);
+      font-size: 25px;
+      margin-left: 15px; }
+.content .floor-first {
+  position: relative;
+  margin-top: 90px;
+  margin-bottom: 140px;
+  height: 808px; }
+  .content .floor-first .floor-cell {
+    position: absolute; }
+  .content .floor-first .ab-one {
+    top: 0;
+    left: 0; }
+  .content .floor-first .ab-two {
+    top: 416px;
+    left: 0; }
+  .content .floor-first .ab-three {
+    top: 0;
+    left: 410px; }
+.content .floor-second .floor-second-title, .content .floor-second .floor-second-footer {
+  text-align: center;
+  font-size: 50px;
+  line-height: 100%; }
+.content .floor-second .floor-second-footer span {
+  display: inline-block;
+  padding: 0 60px;
+  height: 40px;
+  line-height: 40px;
+  background: #000;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer; }
+  .content .floor-second .floor-second-footer span:hover {
+    opacity: 0.8; }
+.content .floor-second .floor-second-content .floor {
+  width: 100%; }
+.content .floor-second .floor-second-content .floor-cell:first-child {
+  width: 34%; }
+.content .floor-second .floor-second-content .floor-cell p {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 22px;
+  line-height: 100%; }
+  .content .floor-second .floor-second-content .floor-cell p a {
+    display: inline-block;
+    width: 150px;
+    height: 27px;
+    line-height: 27px;
+    background: #f4f4f4;
+    color: #000;
+    font-size: 15px;
+    cursor: pointer; }
+.content .floor-second .floor-cell {
+  width: 33%; }
+  .content .floor-second .floor-cell .cell-img {
+    vertical-align: middle;
+    height: 365px;
+    text-align: center; }
 
 /*# sourceMappingURL=default.css.map */

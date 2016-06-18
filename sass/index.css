@@ -2185,16 +2185,16 @@
   overflow: visible;
   clip: auto; }
 
-html body .header .header-main {
+html body .center-block, html body .header .header-main {
   margin-left: auto;
   margin-right: auto; }
 
-html body .clear {
+html body .clear, html body .header .header-main {
   *zoom: 1; }
-  html body .clear:before, html body .clear:after {
+  html body .clear:before, html body .header .header-main:before, html body .clear:after, html body .header .header-main:after {
     content: "";
     display: table; }
-  html body .clear:after {
+  html body .clear:after, html body .header .header-main:after {
     clear: both; }
 
 /**
@@ -2663,6 +2663,14 @@ html {
   html body {
     height: 100%;
     background: #fff; }
+    html body a:hover {
+      opacity: 0.8; }
+    html body .tl {
+      text-align: left; }
+    html body .tr {
+      text-align: right; }
+    html body .tc {
+      text-align: center; }
     html body .fl {
       float: left;
       display: inline; }
@@ -2671,6 +2679,15 @@ html {
       display: inline; }
     html body .clear {
       position: relative; }
+    html body .center-block {
+      width: 1395px; }
+    html body .floor {
+      display: table;
+      border-collapse: collapse; }
+      html body .floor .floor-row {
+        display: table-row; }
+      html body .floor .floor-cell {
+        display: table-cell; }
     html body .header {
       height: 170px; }
       html body .header .header-main {
@@ -2686,7 +2703,8 @@ html {
               left: -5px;
               font-size: 10px; }
         html body .header .header-main .header-logo {
-          margin-right: 160px; }
+          margin-right: 160px;
+          width: 290px; }
         html body .header .header-main .header-href {
           padding-top: 80px; }
           html body .header .header-main .header-href a {
@@ -2707,27 +2725,89 @@ html {
             font-size: 18px;
             margin-left: 10px;
             cursor: pointer; }
-    html body .footer {
-      height: 640px; }
-      html body .footer .footer-follow {
+    html body .footer .footer-follow {
+      position: relative;
+      margin-top: 115px;
+      text-align: center; }
+      html body .footer .footer-follow .bt2 {
+        border-bottom: 2px dashed #a0a0a0; }
+      html body .footer .footer-follow span {
+        display: inline-block;
+        width: 375px;
+        font-size: 30px;
+        background: #fff;
         position: relative;
-        margin-top: 115px;
-        text-align: center; }
-        html body .footer .footer-follow .bt2 {
-          border-bottom: 2px dashed #a0a0a0; }
-        html body .footer .footer-follow span {
-          display: inline-block;
-          width: 375px;
-          font-size: 30px;
-          background: #fff;
+        top: -25px; }
+    html body .footer .footer-nav {
+      width: 100%;
+      padding: 80px 110px 0;
+      height: 300px;
+      background-color: #f4f4f4; }
+      html body .footer .footer-nav .floor-nav-sub {
+        padding: 60px 180px 0 110px; }
+        html body .footer .footer-nav .floor-nav-sub p:first-child {
+          font-size: 25px; }
+        html body .footer .footer-nav .floor-nav-sub p {
           position: relative;
-          top: -25px; }
-      html body .footer .footer-nav {
-        height: 300px;
-        background-color: #f4f4f4; }
-      html body .footer .footer-copy {
-        height: 50px;
-        background: #ffb07b;
-        border-bottom: 15px solid red; }
+          width: 445px;
+          font-size: 20px;
+          line-height: 100%;
+          margin-bottom: 20px; }
+          html body .footer .footer-nav .floor-nav-sub p input {
+            width: 360px;
+            padding: 2px 40px;
+            height: 34px;
+            outline: 0;
+            border: 1px solid #a0a0a0;
+            border-radius: 25px; }
+          html body .footer .footer-nav .floor-nav-sub p i {
+            position: absolute;
+            top: 9px;
+            right: 20px;
+            cursor: pointer; }
+        html body .footer .footer-nav .floor-nav-sub p.mt35 {
+          margin: 35px 0 20px; }
+      html body .footer .footer-nav .footer-nav-about {
+        width: 360px;
+        padding-top: 60px; }
+        html body .footer .footer-nav .footer-nav-about p:first-child {
+          margin-bottom: 50px; }
+          html body .footer .footer-nav .footer-nav-about p:first-child a {
+            font-size: 25px; }
+        html body .footer .footer-nav .footer-nav-about p {
+          margin-bottom: 15px;
+          line-height: 100%; }
+          html body .footer .footer-nav .footer-nav-about p a {
+            font-size: 20px;
+            color: #333; }
+      html body .footer .footer-nav .footer-nav-about:last-child p:first-child {
+        margin-bottom: 20px; }
+        html body .footer .footer-nav .footer-nav-about:last-child p:first-child a {
+          font-size: 25px; }
+      html body .footer .footer-nav .footer-nav-about:last-child p {
+        padding-top: 15px;
+        margin-bottom: 20px;
+        line-height: 100%; }
+        html body .footer .footer-nav .footer-nav-about:last-child p a {
+          font-size: 25px;
+          color: #333; }
+          html body .footer .footer-nav .footer-nav-about:last-child p a i {
+            margin-right: 20px;
+            font-size: 30px; }
+      html body .footer .footer-nav .footer-nav-about:last-child p:last-child a i {
+        position: relative;
+        top: 3px; }
+    html body .footer .footer-copy {
+      height: 50px;
+      background: #ffb07b;
+      border-bottom: 15px solid red;
+      padding-left: 110px;
+      padding-right: 80px; }
+      html body .footer .footer-copy span {
+        width: 33%;
+        display: inline-block;
+        font-size: 22px;
+        line-height: 50px;
+        color: #fff; }
 
 /*# sourceMappingURL=index.css.map */

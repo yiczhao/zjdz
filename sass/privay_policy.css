@@ -1,0 +1,31 @@
+.content {
+  border-top: 1px solid #eeeeee;
+  text-align: center; }
+  .content .privay-title {
+    font-size: 55px;
+    margin: 80px auto 145px;
+    line-height: 100%; }
+  .content .content-row {
+    border-bottom: 2px dashed #a0a0a0; }
+    .content .content-row .m50 {
+      margin: 50px 0; }
+    .content .content-row p {
+      text-align: left;
+      margin-bottom: 25px;
+      font-size: 24px; }
+      .content .content-row p a {
+        color: red; }
+  .content .privay-bottom .f55 {
+    margin-top: 140px;
+    padding-bottom: 25px;
+    margin-bottom: 45px;
+    font-size: 55px;
+    line-height: 100%;
+    border-bottom: 2px dashed #a0a0a0; }
+  .content .privay-bottom .f24 {
+    font-size: 24px;
+    line-height: 100%; }
+    .content .privay-bottom .f24 a {
+      color: red; }
+
+/*# sourceMappingURL=privay_policy.css.map */

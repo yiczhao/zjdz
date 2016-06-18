@@ -1,0 +1,231 @@
+.content .brand, .content .press_center {
+  *zoom: 1; }
+  .content .brand:before, .content .press_center:before, .content .brand:after, .content .press_center:after {
+    content: "";
+    display: table; }
+  .content .brand:after, .content .press_center:after {
+    clear: both; }
+
+.content .banner {
+  height: 370px;
+  margin-bottom: 65px;
+  background: url("../images/aboutUs/banner.jpg") no-repeat 100% 100%; }
+.content .company_profile .floor-cell {
+  vertical-align: middle; }
+  .content .company_profile .floor-cell .about-title {
+    padding-left: 25px;
+    margin-top: -60px;
+    border-left: 5px solid #000;
+    font-size: 50px;
+    line-height: 100%; }
+  .content .company_profile .floor-cell p:first-child {
+    margin-bottom: 45px; }
+  .content .company_profile .floor-cell p {
+    font-size: 24px;
+    line-height: 30px; }
+.content .about-common {
+  margin-top: 30px; }
+  .content .about-common .about-btns {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #f3f3f3;
+    text-align: center; }
+    .content .about-common .about-btns a {
+      margin-right: 25px;
+      display: inline-block;
+      width: 265px;
+      height: 35px;
+      line-height: 35px;
+      font-size: 24px;
+      text-align: center;
+      background: #f3f3f3;
+      color: #000; }
+    .content .about-common .about-btns .active {
+      background: #000;
+      color: #fff; }
+  .content .about-common .about-home {
+    height: 65px;
+    line-height: 65px;
+    text-align: right; }
+    .content .about-common .about-home a {
+      color: #000;
+      font-size: 20px; }
+      .content .about-common .about-home a i {
+        font-size: 25px;
+        margin-right: 10px; }
+.content .brand {
+  display: block;
+  padding: 20px 0 50px;
+  border-top: 1px solid #eeeeee; }
+  .content .brand .floor-cell:first-child {
+    margin-right: 90px; }
+  .content .brand .floor-cell {
+    display: block;
+    float: left;
+    display: inline;
+    width: 650px;
+    padding-bottom: 60px;
+    text-align: center;
+    background-color: #eeeeee; }
+    .content .brand .floor-cell .brand-img {
+      width: 575px;
+      margin: 40px auto 0;
+      overflow: hidden; }
+    .content .brand .floor-cell .brand-title {
+      font-size: 42px;
+      padding: 50px 0 30px; }
+    .content .brand .floor-cell .brand-text {
+      font-size: 18px; }
+.content .press_center {
+  padding-top: 85px;
+  border-top: 1px solid #eeeeee; }
+  .content .press_center .center-block {
+    width: 1495px; }
+  .content .press_center .floor-cell {
+    position: relative;
+    margin-left: 30px;
+    margin-bottom: 95px;
+    display: block;
+    float: left;
+    display: inline;
+    width: 475px;
+    padding-bottom: 25px;
+    border: 1px solid #eeeeee; }
+    .content .press_center .floor-cell .press-img {
+      width: 435px;
+      margin: 25px auto 65px;
+      overflow: hidden;
+      box-shadow: #ccc 5px 5px 5px; }
+    .content .press_center .floor-cell .press-title {
+      margin-left: 25px;
+      padding-left: 10px;
+      font-size: 21px;
+      border-left: 2px solid #000;
+      line-height: 100%; }
+    .content .press_center .floor-cell .press-time {
+      margin: 25px;
+      color: #b7b7b7;
+      text-align: right;
+      font-size: 22px; }
+    .content .press_center .floor-cell .press-text {
+      font-size: 12px;
+      margin: 0 25px; }
+    .content .press_center .floor-cell .read {
+      position: absolute;
+      bottom: 20px;
+      right: 21px;
+      display: inline-block;
+      width: 115px;
+      height: 18px;
+      line-height: 18px;
+      text-align: center;
+      background: #c6292b;
+      color: #fff; }
+      .content .press_center .floor-cell .read:hover {
+        opacity: 1; }
+  .content .press_center .mr0 {
+    margin-left: 0px; }
+  .content .press_center .pages {
+    float: left;
+    width: 100%;
+    display: inline-block;
+    text-align: center; }
+    .content .press_center .pages i {
+      color: #dbdbdb;
+      cursor: pointer; }
+      .content .press_center .pages i:hover {
+        opacity: 0.8; }
+.content .contact_us {
+  padding-top: 70px;
+  border-top: 1px solid #eeeeee; }
+  .content .contact_us .floor {
+    width: 1595px; }
+  .content .contact_us .floor-cell:first-child {
+    margin-right: 80px; }
+  .content .contact_us .floor-cell {
+    display: block;
+    float: left;
+    display: inline;
+    padding-bottom: 60px;
+    text-align: center; }
+    .content .contact_us .floor-cell .brand-img {
+      width: 726px;
+      overflow: hidden; }
+    .content .contact_us .floor-cell p {
+      font-size: 24px;
+      width: 690px;
+      text-align: left;
+      display: table;
+      margin-bottom: 40px;
+      line-height: 100%; }
+      .content .contact_us .floor-cell p i, .content .contact_us .floor-cell p span {
+        display: table-cell;
+        vertical-align: middle; }
+      .content .contact_us .floor-cell p i {
+        font-size: 30px;
+        padding-right: 35px; }
+    .content .contact_us .floor-cell .contact-follow {
+      position: relative;
+      margin-top: 115px;
+      text-align: center; }
+      .content .contact_us .floor-cell .contact-follow .bt2 {
+        border-bottom: 2px dashed #a0a0a0; }
+      .content .contact_us .floor-cell .contact-follow span {
+        display: inline-block;
+        width: 235px;
+        font-size: 27px;
+        background: #fff;
+        position: relative;
+        top: -20px; }
+    .content .contact_us .floor-cell .submit {
+      position: relative; }
+      .content .contact_us .floor-cell .submit textarea {
+        width: 755px;
+        padding: 15px;
+        height: 67px;
+        border: 1px solid #c0c0c0;
+        outline: 0;
+        border-radius: 5px; }
+      .content .contact_us .floor-cell .submit a {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        background: #000;
+        color: #fff;
+        width: 88px;
+        height: 88px;
+        line-height: 88px; }
+.content .company_info {
+  padding-top: 70px;
+  border-top: 1px solid #eeeeee; }
+  .content .company_info .center-block {
+    text-align: center; }
+    .content .company_info .center-block h1 {
+      font-size: 53px;
+      width: 1180px;
+      line-height: 100%;
+      margin: 0 auto; }
+    .content .company_info .center-block .time {
+      margin: 45px 0 155px;
+      color: #747474;
+      font-size: 36px; }
+    .content .company_info .center-block .floor {
+      margin-bottom: 60px; }
+      .content .company_info .center-block .floor .floor-cell {
+        padding: 10px; }
+    .content .company_info .center-block p {
+      font-size: 28px;
+      margin-bottom: 60px;
+      color: #666;
+      line-height: 100%; }
+    .content .company_info .center-block .page {
+      font-size: 35px;
+      margin-bottom: 130px; }
+      .content .company_info .center-block .page a {
+        color: #000;
+        margin-right: 110px; }
+        .content .company_info .center-block .page a i {
+          margin: 0 10px; }
+
+/*# sourceMappingURL=about_us.css.map */
