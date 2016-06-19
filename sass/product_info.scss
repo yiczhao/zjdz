@@ -1,0 +1,203 @@
+@charset "UTF-8";
+//-----------------------------------------------------
+// index scss
+//-----------------------------------------------------
+
+//-----------------------------------------------------
+// author:      Yic
+// version:     1.0
+// time:        2016-06-16
+//-----------------------------------------------------
+@import "./assets/sassCore-master/function";
+.product_info{
+  border-top:1px solid #eeeeee;
+  .product-buy{
+    width: 1710px;
+    margin: 0 auto 130px;
+    .title{
+      font-size: 28px;
+      margin: 85px 0 60px;
+      a{
+        color: #000;
+        display: inline-block;
+        line-height: 100%;
+      }
+      span{
+        color: #eda968;
+        line-height: 100%;
+      }
+    }
+    .floor{
+      .floor-cell{
+        padding-right: 50px;
+        vertical-align: top;
+        .change-img{
+          ul,span,li{
+            display: inline-block;
+          }
+          ul{
+            width: 760px;
+            overflow: hidden;
+            li{
+              margin-right: 10px;
+              img{
+                border: 0;
+                width: 170px;
+                height: 170px;
+              }
+            }
+          }
+          span{
+            font-size: 60px;
+            position: relative;
+            top: -66px;
+            cursor: pointer;
+          }
+        }
+        img{
+          border:1px solid #eeeeee;
+        }
+        p{
+          margin-bottom: 30px;
+          font-size: 26px;
+          line-height: 100%;
+        }
+        .buy-btn{
+          a{
+            display: inline-block;
+            padding:0 20px;
+            height: 60px;
+            line-height: 60px;
+            i{
+              margin-right: 10px;
+            }
+          }
+          .btn-cart{
+            background: #f6db99;
+            border:1px solid #ffa14a;
+            color: #000;
+          }
+          .btn-favorite{
+            background: #f0f1f4;
+            border:1px solid #eeeeee;
+            color: #63666a;
+          }
+        }
+        .f60{
+          font-size: 60px;
+        }
+        .color-img{
+          span,img{
+            display: inline-block;
+          }
+          img{
+            width: 55px;
+            height:55px;
+            border:1px solid #eeeeee;
+          }
+          .active{
+            border:1px solid #ec9f53;
+          }
+        }
+      }
+    }
+  }
+  .btn-bg{
+    height: 66px;
+  }
+  .description{
+    background: url("../images/product/description.jpg") no-repeat center center;
+  }
+  .related{
+    background: url("../images/product/related.jpg") no-repeat center center;
+  }
+  .reviews{
+    background: url("../images/product/reviews.jpg") no-repeat center center;
+  }
+  .description-content{
+    .description-text{
+      width: 1080px;
+      margin: 0 auto;
+      margin-top: 130px;
+      text-align: left;
+      .title{
+        font-size: 30px;
+        margin-bottom: 25px;
+        line-height: 100%;
+      }
+      .text{
+        margin-bottom: 60px;
+        font-size: 24px;
+        color: #474747;
+        line-height: 100%;
+      }
+    }
+  }
+  .reviews-content{
+    .center-block{
+      text-align: center;
+      .f50{
+        font-size: 50px;
+        margin-top: 10px;
+      }
+    }
+    .reviews-star{
+      i{
+        color:#fdbd01;
+      }
+    }
+    .star-text{
+      width: 1056px;
+      display: inline-block;
+      text-align: left;
+      p{
+        font-size: 20px;
+      }
+      .f25{
+        font-size: 25px;
+      }
+      .color999{
+        color: #999;
+      }
+      .color666{
+        color: #666;
+      }
+    }
+  }
+  .related-content{
+    text-align: center;
+    .title{
+      margin:25px 0 80px 0;
+      font-size: 28px;
+    }
+    .floor{
+      margin: 0 auto;
+      .floor-cell{
+        padding-right: 20px;
+      }
+    }
+  }
+  .pages{
+    margin: 130px auto;
+    text-align: center;
+    a,ul,li{
+      display: inline-block;
+      font-size: 15px;
+      color: #686868;
+      line-height: 100%;
+      i{
+        margin-left:15px;
+      }
+    }
+    li{
+      margin-left: 15px;
+      padding:0 5px;
+    }
+    .active{
+      background: #686868;
+      a{
+        color: #fff;
+      }
+    }
+  }
+}

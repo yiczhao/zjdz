@@ -1,0 +1,166 @@
+@charset "UTF-8";
+//-----------------------------------------------------
+// index scss
+//-----------------------------------------------------
+
+//-----------------------------------------------------
+// author:      Yic
+// version:     1.0
+// time:        2016-06-16
+//-----------------------------------------------------
+@import "./assets/sassCore-master/function";
+.product{
+  a.buy-btn{
+    position: absolute;
+    right:175px;
+    bottom: 85px;
+    display: inline-block;
+    width: 210px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    border: 1px solid #bbbbbb;
+    i{
+      transform: rotate(44deg);
+      font-size: 16px;
+      margin-left: 15px;
+    }
+  }
+  .product-banner{
+    width:100%;
+    height:510px;
+    .center-block{
+      position:relative;
+      .prev-btn,.next-btn{
+        position:absolute;
+        width: 40px;
+        height: 40px;
+        top:225px;
+        cursor: pointer;
+        &:hover{
+          @include opacity(80);
+        }
+        i{
+          font-size: 40px;
+          color: #e3e3e3;
+        }
+      }
+      .prev-btn{
+        left:0;
+      }
+      .next-btn{
+        right:0;
+      }
+      .img-ul{
+        text-align: center;
+        .img-li{
+          display: none;
+        }
+        .show-li{
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .nav-btn{
+    width: 1200px;
+    margin:85px auto;
+    .floor-cell{
+      font-size: 23px;
+      line-height: 100%;
+      text-align: center;
+      a{
+        color:#000;
+      }
+    }
+  }
+  .btn-bg{
+    width: 455px;
+    height: 77px;
+    margin:130px auto;
+    background: url('../images/product/btn-bg.jpg');
+    font-size: 40px;
+    text-align: center;
+    line-height: 77px;
+  }
+  .pages{
+    text-align: center;
+    a,ul,li{
+      display: inline-block;
+      font-size: 30px;
+      color: #000;
+      line-height: 100%;
+      i{
+        font-size: 40px;
+        margin-left:110px;
+        position: relative;
+        top:3px;
+      }
+    }
+    ul{
+      margin-left: 15px;
+    }
+    li{
+      margin-left: 5px;
+      padding:0 5px;
+    }
+    .active{
+      background: #000;
+      a{
+        color: #fff;
+      }
+    }
+  }
+  .buy-one{
+    width: 1395px;
+    margin: 0 auto;
+    text-align: center;
+    .floor-cell{
+      padding: 0 20px;
+    }
+    div{
+      display: inline-block;
+      width: 100%;
+      a{
+        color: #000;
+      }
+    }
+    .cell-text{
+      margin-top: 50px;
+      font-size: 28px;
+    }
+  }
+  .buy-two{
+    width: 1395px;
+    margin: 0 auto;
+    text-align: center;
+    .floor-cell{
+      padding-left: 20px;
+      .cell-br{
+        border: 1px solid #eee;
+        margin-bottom: 80px;
+      }
+    }
+    a{
+      color: #000;
+      position: relative;
+      top:0;
+      left: 0;
+    }
+    .cell-title{
+      margin:65px 0 35px;
+      font-size: 25px;
+      line-height: 100%;
+    }
+    .cell-text{
+      display: inline-block;
+      font-size: 13px;
+      width: 265px;
+    }
+    .buy-btn{
+      margin:25px 0 50px;
+    }
+  }
+}
