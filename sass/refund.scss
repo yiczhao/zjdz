@@ -9,194 +9,123 @@
 // time:        2016-06-16
 //-----------------------------------------------------
 @import "./assets/sassCore-master/function";
-.product_info{
+.refund{
   border-top:1px solid #eeeeee;
-  .product-buy{
-    width: 1710px;
-    margin: 0 auto 130px;
-    .title{
-      font-size: 28px;
-      margin: 85px 0 60px;
-      a{
-        color: #000;
-        display: inline-block;
-        line-height: 100%;
-      }
-      span{
-        color: #eda968;
-        line-height: 100%;
-      }
-    }
-    .floor{
-      .floor-cell{
-        padding-right: 50px;
-        vertical-align: top;
-        .change-img{
-          ul,span,li{
-            display: inline-block;
-          }
-          ul{
-            width: 760px;
-            overflow: hidden;
-            li{
-              margin-right: 10px;
-              img{
-                border: 0;
-                width: 170px;
-                height: 170px;
-              }
-            }
-          }
-          span{
-            font-size: 60px;
-            position: relative;
-            top: -66px;
-            cursor: pointer;
-          }
-        }
-        img{
-          border:1px solid #eeeeee;
-        }
-        p{
-          margin-bottom: 30px;
-          font-size: 26px;
-          line-height: 100%;
-        }
-        .buy-btn{
-          a{
-            display: inline-block;
-            padding:0 20px;
-            height: 60px;
-            line-height: 60px;
-            i{
-              margin-right: 10px;
-            }
-          }
-          .btn-cart{
-            background: #f6db99;
-            border:1px solid #ffa14a;
-            color: #000;
-          }
-          .btn-favorite{
-            background: #f0f1f4;
-            border:1px solid #eeeeee;
-            color: #63666a;
-          }
-        }
-        .f60{
-          font-size: 60px;
-        }
-        .color-img{
-          span,img{
-            display: inline-block;
-          }
-          img{
-            width: 55px;
-            height:55px;
-            border:1px solid #eeeeee;
-          }
-          .active{
-            border:1px solid #ec9f53;
-          }
-        }
-      }
-    }
-  }
-  .btn-bg{
-    height: 66px;
-  }
-  .description{
-    background: url("../images/product/description.jpg") no-repeat center center;
-  }
-  .related{
-    background: url("../images/product/related.jpg") no-repeat center center;
-  }
-  .reviews{
-    background: url("../images/product/reviews.jpg") no-repeat center center;
-  }
-  .description-content{
-    .description-text{
-      width: 1080px;
-      margin: 0 auto;
-      margin-top: 130px;
-      text-align: left;
-      .title{
-        font-size: 30px;
-        margin-bottom: 25px;
-        line-height: 100%;
-      }
-      .text{
-        margin-bottom: 60px;
-        font-size: 24px;
-        color: #474747;
-        line-height: 100%;
-      }
-    }
-  }
-  .reviews-content{
-    .center-block{
+  .refund-content{
+    width: 1300px;
+    margin: 0 auto;
+    .refund-title{
       text-align: center;
       .f50{
+        margin:75px 0;
         font-size: 50px;
-        margin-top: 10px;
       }
-    }
-    .reviews-star{
-      i{
-        color:#fdbd01;
-      }
-    }
-    .star-text{
-      width: 1056px;
-      display: inline-block;
-      text-align: left;
       p{
-        font-size: 20px;
-      }
-      .f25{
-        font-size: 25px;
-      }
-      .color999{
-        color: #999;
-      }
-      .color666{
-        color: #666;
+        margin-bottom: 30px;
+        font-size: 16px;
+        line-height: 20px;
       }
     }
-  }
-  .related-content{
-    text-align: center;
-    .title{
-      margin:25px 0 80px 0;
-      font-size: 28px;
-    }
-    .floor{
-      margin: 0 auto;
-      .floor-cell{
-        padding-right: 20px;
+    .refund-form{
+      .form-title{
+        margin-top: 100px;
+        height:85px;
+        border-bottom:1px solid #000;
+        font-size: 30px;
+        text-align: center;
+        i{
+          margin-right: 10px;
+          color: #ff8322;
+        }
       }
-    }
-  }
-  .pages{
-    margin: 130px auto;
-    text-align: center;
-    a,ul,li{
-      display: inline-block;
-      font-size: 15px;
-      color: #686868;
-      line-height: 100%;
-      i{
-        margin-left:15px;
-      }
-    }
-    li{
-      margin-left: 15px;
-      padding:0 5px;
-    }
-    .active{
-      background: #686868;
-      a{
-        color: #fff;
+      .form-content{
+        width: 1160px;
+        margin:0 auto;
+        div:first-child{
+          margin-top: 30px;
+        }
+        div{
+          margin-bottom: 25px;
+          font-size: 22px;
+          a{
+            margin-right: 15px;
+            color: #666;
+            font-size: 18px;
+            i{
+              margin-right: 5px;
+              font-size: 12px;
+              position: relative;
+              top:-3px;
+            }
+          }
+          .input-radius{
+            width:  1100px;
+            padding: 0 30px;
+            height: 44px;
+            border: 1px solid #333;
+            border-radius: 25px;
+            outline: 0;
+          }
+          textarea{
+            width:  1100px;
+            padding: 10px 30px;
+            height: 100px;
+            border: 1px solid #333;
+            outline: 0;
+          }
+        }
+        .floor{
+          width: 1100px;
+          margin-left: 25px;
+          .floor-cell{
+            padding:0 10px;
+            input{
+              padding: 0 10px;
+              height: 50px;
+              border: 1px solid #333;
+              outline: 0;
+              text-align: center;
+            }
+            .w100{
+              width: 100%;
+            }
+          }
+        }
+        .add{
+          width: 115px;
+          height: 115px;
+          text-align: center;
+          line-height: 115px;
+          font-size: 40px;
+          border: 1px solid #333;
+          cursor: pointer;
+        }
+        .submit{
+          text-align: right;
+          input,a,img{
+            display: inline-block;
+            margin-right: 20px;
+          }
+          input{
+            width: 260px;
+            height: 40px;
+            text-align: center;
+            outline: 0;
+          }
+          a{
+            width: 102px;
+            height: 42px;
+            line-height: 42px;
+            color: #fff;
+            text-align: center;
+          }
+          .sub-true{
+            background: #a40000;
+          }
+          .sub-reset{
+            background: #9c9c9c;
+          }
+        }
       }
     }
   }
